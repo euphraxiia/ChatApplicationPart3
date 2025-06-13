@@ -21,9 +21,15 @@ jobs:
         distribution: 'temurin'
         java-version: '21'
 
+    - name: Verify files and path
+      run: |
+        pwd
+        ls -l
+
     - name: Build with Maven
       run: mvn -B clean install
+      working-directory: .
 
     - name: Run tests
       run: mvn test
-      
+      working-directory: .
