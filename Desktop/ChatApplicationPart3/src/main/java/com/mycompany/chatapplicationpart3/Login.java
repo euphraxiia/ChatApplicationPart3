@@ -52,3 +52,5 @@ public class Login {
             "Username or password incorrect, please try again.";
     }
 }
+
+// Trigger GitHub Actions workflow
